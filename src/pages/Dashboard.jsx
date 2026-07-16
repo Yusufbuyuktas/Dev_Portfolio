@@ -67,7 +67,6 @@ function Dashboard({ projects, onBackToPortfolio, onAdd, onUpdate, onDelete }) {
 
   return (
     <div className="min-h-screen bg-black text-zinc-100 font-sans pb-12">
-      {/* Navbar */}
       <nav className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center border-b border-zinc-900">
         <span className="text-xl font-bold text-red-500 tracking-wider">YÖNETİM PANELİ </span>
         <button 
@@ -80,7 +79,6 @@ function Dashboard({ projects, onBackToPortfolio, onAdd, onUpdate, onDelete }) {
 
       <main className="max-w-6xl mx-auto px-6 mt-10 grid grid-cols-1 lg:grid-cols-3 gap-8">
         
-        {/* SOL TARAF: Proje Ekle / Düzenle Formu */}
         <div className="lg:col-span-1 bg-zinc-900/60 border border-zinc-800/80 rounded-2xl p-6 h-fit">
           <h2 className="text-xl font-bold text-white mb-4">
             {editingId ? 'Proje Düzenle ' : 'Yeni Proje Ekle '}
@@ -189,7 +187,6 @@ function Dashboard({ projects, onBackToPortfolio, onAdd, onUpdate, onDelete }) {
           </form>
         </div>
 
-        {/* SAĞ TARAF: Projeleri Listeleme Tablosu */}
         <div className="lg:col-span-2 bg-zinc-900/60 border border-zinc-800/80 rounded-2xl p-6">
           <h2 className="text-xl font-bold text-white mb-4">Kayıtlı Projeler Listesi</h2>
           

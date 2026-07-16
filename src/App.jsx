@@ -7,7 +7,7 @@ function App() {
   const [projects, setProjects] = useState([]);
   const [isAdmin, setIsAdmin] = useState(false);
 
-  // Sayfa ilk açıldığında LocalStorage'dan oku
+
   useEffect(() => {
     const storedProjects = localStorage.getItem('my_portfolio_projects');
     if (storedProjects) {
@@ -18,25 +18,25 @@ function App() {
     }
   }, []);
 
-  // Yardımcı Fonksiyon: Değişiklikleri hem state'e hem LocalStorage'a kaydet
+  // Yardımcı Fonksiyon  Değişiklikleri hem state'e hem LocalStorage'a kaydet
   const saveProjects = (updatedList) => {
     setProjects(updatedList);
     localStorage.setItem('my_portfolio_projects', JSON.stringify(updatedList));
   };
 
-  // 1. CREATE (EKLE)
+  //  CREATE 
   const handleAddProject = (newProject) => {
     const updated = [...projects, { ...newProject, id: Date.now().toString() }];
     saveProjects(updated);
   };
 
-  // 2. UPDATE (GÜNCELLE)
+  //  UPDATE 
   const handleUpdateProject = (updatedProject) => {
     const updated = projects.map((p) => (p.id === updatedProject.id ? updatedProject : p));
     saveProjects(updated);
   };
 
-  // 3. DELETE (SİL)
+  //  DELETE 
   const handleDeleteProject = (id) => {
     if (window.confirm('Bu projeyi silmek istediğine emin misin?')) {
       const updated = projects.filter((p) => p.id !== id);

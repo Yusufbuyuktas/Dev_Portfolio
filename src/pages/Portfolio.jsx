@@ -10,7 +10,6 @@ function Portfolio({ projects, onAdminClick }) {
     ? projects
     : projects.filter(p => p.category === selectedCategory);
 
-  // Yetenek ve Teknolojiler Verisi
   const skills = [
     {
       title: "Oyun Geliştirme",
@@ -42,7 +41,6 @@ function Portfolio({ projects, onAdminClick }) {
   return (
     <div className="min-h-screen bg-black text-zinc-100 font-sans pb-24">
       
-      {/* 1. Üst Menü / Navbar */}
       <nav className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center border-b border-zinc-900">
         <span className="text-xl font-bold text-red-500 tracking-wider">DEV.PORTFOLIO</span>
         <button 
@@ -53,10 +51,8 @@ function Portfolio({ projects, onAdminClick }) {
         </button>
       </nav>
 
-      {/* 2. Hero (Profil Fotoğrafı & Tanıtım) */}
       <header className="max-w-4xl mx-auto text-center px-6 pt-16 pb-12 flex flex-col items-center">
         
-        {/* Profil Fotoğrafı Dairesi */}
         <div className="w-64 h-64 rounded-full border-4 border-red-500/30 p-1 mb-6 relative group">
           <div className="absolute inset-0 rounded-full bg-red-500/20 blur group-hover:blur-md transition-all"></div>
           <div className="w-full h-full rounded-full overflow-hidden bg-zinc-900 relative z-10 flex items-center justify-center border border-red-500">
@@ -76,7 +72,6 @@ function Portfolio({ projects, onAdminClick }) {
         </p>
       </header>
 
-      {/* 3. YETENEKLER & TECH STACK BÖLÜMÜ (Yeni Eklenen Kısım) */}
       <section className="max-w-6xl mx-auto px-6 py-12 border-t border-zinc-900">
         <h2 className="text-2xl font-bold text-center text-white mb-10 flex items-center justify-center gap-2">
           <span className="w-8 h-px bg-zinc-800"></span>
@@ -109,7 +104,6 @@ function Portfolio({ projects, onAdminClick }) {
         </div>
       </section>
 
-      {/* 4. Projeler Bölümü */}
       <section className="max-w-6xl mx-auto px-6 py-12 border-t border-zinc-900">
         <h2 className="text-2xl font-bold text-center text-white mb-8 flex items-center justify-center gap-2">
           <span className="w-8 h-px bg-zinc-800"></span>
@@ -117,7 +111,6 @@ function Portfolio({ projects, onAdminClick }) {
           <span className="w-8 h-px bg-zinc-800"></span>
         </h2>
 
-        {/* Kategori Filtreleri */}
         <div className="flex flex-wrap justify-center gap-3 mb-10">
           {categories.map(category => (
             <button
@@ -134,7 +127,6 @@ function Portfolio({ projects, onAdminClick }) {
           ))}
         </div>
 
-        {/* Proje Kartları Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
           {filteredProjects.map(project => (
             <div 
@@ -186,7 +178,6 @@ function Portfolio({ projects, onAdminClick }) {
         </div>
       </section>
 
-      {/* 5. Kırmızı Devre Temalı Zaman Çizgisi (Timeline) */}
       <section className="max-w-4xl mx-auto px-6 py-12 border-t border-zinc-900">
         <h2 className="text-2xl font-bold text-center text-white mb-16 flex items-center justify-center gap-2">
           <span className="w-8 h-px bg-zinc-800"></span>
@@ -194,12 +185,11 @@ function Portfolio({ projects, onAdminClick }) {
           <span className="w-8 h-px bg-zinc-800"></span>
         </h2>
 
-        {/* Devre Yolu Zaman Çizgisi Alanı */}
         <div className="relative">
           
-          {/* Neon Kırmızı Devre Hattı (Dikey Ana Hat) */}
+
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-[2px] bg-zinc-800">
-            {/* Akan Işık / Enerji Efekti (Kırmızı) */}
+
             <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-transparent via-red-500 to-transparent shadow-[0_0_8px_#ef4444]"></div>
           </div>
 
@@ -209,14 +199,13 @@ function Portfolio({ projects, onAdminClick }) {
               return (
                 <div key={event.id} className="relative flex items-center justify-between md:flex-row flex-col">
                   
-                  {/* SOL BLOK */}
+
                   <div className={`w-full md:w-[45%] ${isEven ? 'md:text-right text-left' : 'md:order-last text-left'}`}>
                     <div className="bg-zinc-900/40 p-5 rounded-xl border border-zinc-800/80 hover:border-red-500/20 transition-all shadow-md relative">
                       <span className="text-xs font-bold text-red-500 tracking-wider block mb-1">{event.date}</span>
                       <h3 className="text-base font-bold text-white mb-2">{event.title}</h3>
                       <p className="text-xs text-zinc-400 leading-relaxed">{event.description}</p>
                       
-                      {/* Yatay Devre Çizgisi (Kırmızı) */}
                       <div className={`hidden md:block absolute top-1/2 w-8 h-[2px] bg-red-500/30 ${
                         isEven 
                           ? '-right-8 border-r border-t border-red-400/50' 
@@ -225,12 +214,10 @@ function Portfolio({ projects, onAdminClick }) {
                     </div>
                   </div>
 
-                  {/* MERKEZ: Devre Düğümü (Microchip Node - Kırmızı) */}
                   <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 rounded-md bg-zinc-900 border-2 border-red-500 flex items-center justify-center z-10 shadow-[0_0_10px_rgba(239,68,68,0.3)] rotate-45">
                     <div className="w-1.5 h-1.5 bg-red-500 rounded-full animate-pulse"></div>
                   </div>
 
-                  {/* BOŞ BLOK */}
                   <div className="hidden md:block w-[45%]"></div>
 
                 </div>

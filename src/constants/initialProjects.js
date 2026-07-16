@@ -4,7 +4,7 @@ export const initialProjects = [
     title: "Batak 2D",
     description: "Manuel olarak çizilmiş kare kare (frame-by-frame) piksel sanat animasyonları, gelişmiş dövüş ve bulmaca mekanikleri içeren, hikaye odaklı bir 2D mobil macera oyunu.",
     category: "Unity",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&auto=format&fit=crop&q=60", // Geçici kaliteli bir oyun görseli
+    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&auto=format&fit=crop&q=60", 
     githubUrl: "https://github.com/username/batak-2d",
     liveUrl: "",
     technologies: ["Unity", "C#", "Pixel Art", "Mobile"]
