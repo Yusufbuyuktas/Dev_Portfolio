@@ -1,23 +1,63 @@
 export const initialProjects = [
   {
-    id: "1",
+    id: "p1",
     title: "Batak 2D",
     description: "Manuel olarak çizilmiş kare kare (frame-by-frame) piksel sanat animasyonları, gelişmiş dövüş ve bulmaca mekanikleri içeren, hikaye odaklı bir 2D mobil macera oyunu.",
     category: "Unity",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&auto=format&fit=crop&q=60", 
-    githubUrl: "https://github.com/username/batak-2d",
-    liveUrl: "",
+    image: "https://img.itch.zone/aW1nLzI2NzA4NzI4LnBuZw==/315x250%23c/V5Vrq2.png",
+    githubUrl: "https://github.com/Yusufbuyuktas/Batak",
+    liveUrl: "https://www.youtube.com/watch?v=Ao6PSjadBxU",
     technologies: ["Unity", "C#", "Pixel Art", "Mobile"]
   },
   {
-    id: "2",
+    id: "p2",
     title: "Fakülte Binası Dijital İkiz Projesi",
     description: "Üniversite fakülte binasının 3D modellenerek Unity ortamına aktarıldığı ve sahneler arası kolayca entegre edilebilen özel bir yükleme ekranı (loading screen) sistemi barındıran dijital ikiz uygulaması.",
     category: "Unity",
-    image: "https://images.unsplash.com/photo-1508962914676-134849a727f0?w=600&auto=format&fit=crop&q=60",
-    githubUrl: "https://github.com/username/digital-twin",
-    liveUrl: "",
+    image: "https://img.itch.zone/aW1hZ2UvNDQ4MzMwOS8yNjcyOTMxMi5wbmc=/794x1000/CensVE.png",
+    githubUrl: "",
+    liveUrl: "https://www.youtube.com/watch?v=LjTitfPmKjA",
     technologies: ["Unity", "C#", "3D Modeling", "UI/UX"]
+  },
+  {
+    id: "p3",
+    title: "Planet Drop",
+    description: "Her yaştan uzay meraklısı için tasarlanmış, görsel odaklı bir eşleştirme ve keşif oyunudur.",
+    category: "Unity",
+    image: "https://img.itch.zone/aW1nLzI2NzA4NzA5LnBuZw==/315x250%23c/rvk0Fw.png",
+    githubUrl: "",
+    liveUrl: "https://yusuf-buyuktas.itch.io/planet-drop",
+    technologies: ["Unity", "C#", "Game Design"]
+  },
+  {
+    id: "p4",
+    title: "Üniversite Profesör/Ders Yönetim Paneli",
+    description: "Bu proje, bir üniversite fakültesindeki profesörleri, dersleri ve bu ikisi arasındaki akademik atama ilişkilerini (teaches) yönetmek amacıyla geliştirilmiş, endüstri standartlarına uygun bir platformdur.",
+    category: "Web",
+    image: "https://private-user-images.githubusercontent.com/187198518/622720075-93c94262-6440-4680-8cc8-5c60e41ca3eb.jpeg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQyMTAzMjUsIm5iZiI6MTc4NDIxMDAyNSwicGF0aCI6Ii8xODcxOTg1MTgvNjIyNzIwMDc1LTkzYzk0MjYyLTY0NDAtNDY4MC04Y2M4LTVjNjBlNDFjYTNlYi5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDcxNiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjA3MTZUMTM1MzQ1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZWQxOWU3MGUzNWE0MTE0N2QzMTFkMjM2ZTYwMTQzNmFhZGQ3MjcwN2Q0ZWZhODdlMWNiMGYyOWNkOGY1ZDM5ZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGanBlZyJ9.Z5zBllW-A3Fxjw-SxKGhcjinOJkTAjrzmuXJK87BiGA",
+    githubUrl: "https://github.com/Yusufbuyuktas/DIMS_project4/tree/main",
+    liveUrl: "",
+    technologies: ["React", "Node.js", "Tailwind"]
+  },
+  {
+    id: "p5",
+    title: "CanBağı",
+    description: "Deprem Öncesi Kritik İletişim Protokolü: 'Deprem sarsıntısı ulaşmadan önceki 15 saniye, hayat kurtarmak için en büyük şansımızdır.'",
+    category: "Flutter",
+    image: "https://private-user-images.githubusercontent.com/187198518/594827369-0ce7af25-5589-497e-a33a-3243e636f886.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQyMTA0MzYsIm5iZiI6MTc4NDIxMDEzNiwicGF0aCI6Ii8xODcxOTg1MTgvNTk0ODI3MzY5LTBjZTdhZjI1LTU1ODktNDk3ZS1hMzNhLTMyNDNlNjM2Zjg4Ni5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNzE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDcxNlQxMzU1MzZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04NDk0YjhhNTg2NThiNzZiMmJjNzI5ZDM0MDU3ZWJmNDUxOWE1MjRmYjIxOGI2OTQ4NDkyMjFkZTQ0MTEzYmZhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZqcGVnIn0.h2JkdnhtvUUxwM_HQl460Vm_SeT2q6s4-NS9nUuNurg",
+    githubUrl: "https://github.com/Yusufbuyuktas/earthline",
+    liveUrl: "",
+    technologies: ["Dart", "Flutter", "Mobile Dev"]
+  },
+  {
+    id: "p6",
+    title: "Araç Kiralama Müşteri Yönetim Sistemi",
+    description: "Bu proje, C# ve MySQL kullanılarak geliştirilmiş basit bir Araç Kiralama Otomasyonudur. Projeyi olabildiğince profesyonel ve okunabilir yapmak için katmanlı mimari kullanılmıştır.",
+    category: "Diğer",
+    image: "https://private-user-images.githubusercontent.com/187198518/622723477-d05c9d45-88aa-4b49-8c08-1a96301eff80.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODQyMTA2NjksIm5iZiI6MTc4NDIxMDM2OSwicGF0aCI6Ii8xODcxOTg1MTgvNjIyNzIzNDc3LWQwNWM5ZDQ1LTg4YWEtNGI0OS04YzA4LTFhOTYzMDFlZmY4MC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNzE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDcxNlQxMzU5MjlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yZjQ0ZmQ1ZDMyYWYxMmUwYmJhODdkNjg4M2NhMjM5YjAxMDgwYTFhZmMyYTM2NTcyYTU3NGUyMmE5NDQ3NTkyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.ApPp7kGmpX-qJgQbuUXSKYZ6ikqKy04e-rS-xH0el6c",
+    githubUrl: "",
+    liveUrl: "https://www.youtube.com/watch?v=fQ5AlugLk2E",
+    technologies: ["C#", "MySQL", "N-Tier Architecture"]
   }
 ];
   
